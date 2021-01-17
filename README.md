@@ -1,4 +1,4 @@
-# AES_Implementation
+# AES_Implementation [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) [![](https://img.shields.io/github/repo-size/vladimirrogozin/AES_Implementation)](https://github.com/vladimirrogozin/AES_Implementation)
 
 ## What is it?
 
