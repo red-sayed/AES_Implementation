@@ -2,7 +2,7 @@
 
 ## What is it?
 
-This is a small and portable C++ implementation of the Advanced Encryption Standart(AES). It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
+This is a small and portable C++17 implementation of the Advanced Encryption Standart(AES). It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
 
 ## Where to use?
 
