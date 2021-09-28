@@ -1,0 +1,21 @@
+To make your own standard you should edit all
+following names by "find nad replace":
+
+1)  Names of files "AesCBC128.h" and others.
+2)  Copyright and contacts at the beginning of each file.
+
+In Function files:
+
+3)  "Aes".
+4)  "128".
+5)  "RED_AESCBC128_H" and others.
+6)  "EncryptAesCBC128", "DecryptAesCBC128".
+7)  "AES_ctx_CBC_128".
+8)  "AES_init_ctx_iv".
+9)  "AES_CBC_encrypt_buffer".
+10) "AES_CBC_decrypt_buffer".
+
+In Declarations:
+
+11) "RED_AESDECLARATIONS_H".
+12) "Aes" (namespace).
