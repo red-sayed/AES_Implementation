@@ -60,6 +60,10 @@ const std::string DecryptAesCBC256(const std::string& in, const std::string_view
   * **Convertion functions are included in each of examples.**
  * There is no built-in error checking or protection from out-of-bounds memory access errors as a result of malicious input.
 
+## Want to build your own standard?
+If you're interested in building your standard on this one, you can find everything you need to know in 'YOUR_STANDARD_GUIDE.txt'.
+
+##
 Do contact me if you have improvements to the code(contacts are in each of source files). 
 
 All material in this repository is in the public domain.
