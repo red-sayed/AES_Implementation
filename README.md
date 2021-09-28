@@ -1,8 +1,8 @@
-# AES_Implementation [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) [![](https://img.shields.io/github/repo-size/vladimirrogozin/AES_Implementation)](https://github.com/vladimirrogozin/AES_Implementation)
+# AES_Implementation [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) [![](https://img.shields.io/github/repo-size/vladimirrogozin/AES_Implementation)](https://github.com/vladimirrogozin/AES_Implementation) ![](https://img.shields.io/github/stars/vladimirrogozin/AES_Implementation?style=social)
 
 ## What is it?
 
-This is a small and portable C++ implementation of the Advanced Encryption Standart(AES). It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
+This is a small and portable C++17 implementation of the Advanced Encryption Standartd(AES). It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
 
 ## Where to use?
 
