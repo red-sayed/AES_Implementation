@@ -18,7 +18,7 @@ In Function files:
 
 Macroses(encryption/decryption settings):
 
-11) "AES_256", "Nk", "Nr", "KEY_EXP_SIZE".
+11) "AES_256", "Nk", "Nr", "KEY_EXP_SIZE" (You can find some settings in 'AesKeyExpansion.xlsx').
 
 
 In Declarations:
