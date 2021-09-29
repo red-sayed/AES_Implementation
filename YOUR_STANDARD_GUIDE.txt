@@ -4,6 +4,7 @@ following names by "find nad replace":
 1)  Names of files "AesCBC128.h" and others.
 2)  Copyright and contacts at the beginning of each file.
 
+
 In Function files:
 
 3)  "Aes".
@@ -14,6 +15,11 @@ In Function files:
 8)  "AES_init_ctx_iv".
 9)  "AES_CBC_encrypt_buffer".
 10) "AES_CBC_decrypt_buffer".
+
+Macroses(encryption/decryption settings):
+
+11) "AES_256", "Nk", "Nr", "KEY_EXP_SIZE".
+
 
 In Declarations:
 
