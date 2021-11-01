@@ -1,5 +1,7 @@
 # AES_Implementation [![](https://img.shields.io/apm/l/vim-mode)](https://github.com/Red-company/RES_Implementation/blob/main/LICENSE.md) [![](https://img.shields.io/github/repo-size/vladimirrogozin/AES_Implementation)](https://github.com/vladimirrogozin/AES_Implementation) ![](https://img.shields.io/github/stars/vladimirrogozin/AES_Implementation?style=social)
 
+![plot](./Screenshots/Aes-crypt_main.png)
+
 ## What is it?
 
 This is a small and portable C++17 implementation of the Advanced Encryption Standartd(AES). It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
@@ -62,6 +64,16 @@ const std::string DecryptAesCBC256(const std::string& in, const std::string_view
 
 ## Want to build your own standard?
 If you're interested in building your standard on the base of this one, you can find everything you need to know in 'YOUR_STANDARD_GUIDE.txt'.
+
+## Screenshots? Here they are:
+
+Here's an example of encryption in CBC128 mode:
+
+![plot](./Screenshots/Aes-crypt_cbc128_encryption.png)
+
+And the following one is the decryption of previous message:
+
+![plot](./Screenshots/Aes-crypt_cbc128_decryption.png)
 
 ##
 Do contact me if you have improvements to the code(contacts are in each of source files). 
