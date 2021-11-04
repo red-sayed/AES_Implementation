@@ -2,6 +2,9 @@
 
 ![plot](./Screenshots/Aes-crypt_main.png)
 
+## WARNING:
+This repository was the first version of AES, for a newer one check [RedLibrary](https://github.com/Red-company/RedLibrary).
+
 ## What is it?
 
 This is a small and portable C++17 implementation of the Advanced Encryption Standartd(AES). At this repository you also can find 'Aes-crypt' terminal application which helps you to encrypt/decrypt strings. It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
