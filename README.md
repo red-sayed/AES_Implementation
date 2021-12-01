@@ -79,6 +79,4 @@ And the following one is the decryption of previous message:
 ![plot](./Screenshots/Aes-crypt_cbc128_decryption.png)
 
 ##
-Do contact me if you have improvements to the code(contacts are in each of source files). 
-
 All material in this repository is in the public domain.
