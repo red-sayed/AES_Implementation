@@ -3,28 +3,28 @@
 ![plot](./Screenshots/Aes-crypt_main.png)
 
 ## WARNING:
-This repository was the first version of AES, for a newer one check [RedLibrary](https://github.com/Red-company/RedLibrary).
+This repository was the first version of _AES_, for a newer one check [_RedLibrary_](https://github.com/Red-company/RedLibrary).
 
 ## What is it?
 
-This is a small and portable C++17 implementation of the Advanced Encryption Standartd(AES). At this repository you also can find 'Aes-crypt' terminal application which helps you to encrypt/decrypt strings. It is a part of [RedLibrary](https://github.com/Red-company/RedLibrary).
+This is a small and portable _C++17_ implementation of the _Advanced Encryption Standartd(AES)_. At this repository you also can find _'Aes-crypt'_ terminal application which helps you to _encrypt/decrypt strings_. It is a part of [_RedLibrary_](https://github.com/Red-company/RedLibrary).
 
 ## Where to use?
 
-AES can be used everywhere you need. It's got strong encryption level and has pretty good perfomance. But if you're looking for algorithm for specific task, I have an option with excess level of encryption, here it is: [RES](https://github.com/Red-company/RES_Implementation).
+_AES_ can be used everywhere you need. It's got strong encryption level and has pretty good perfomance. But if you're looking for algorithm for specific task, I have an option with excess level of encryption, here it is: [_RES_](https://github.com/Red-company/RES_Implementation).
 
 ## What does AES consist of?
-AES includes 2 encryption modes: [ECB](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29) and [CBC](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29) with 3 key length cases for each of them:
+_AES_ includes 2 encryption modes: [_ECB_](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_.28ECB.29) and [_CBC_](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Cipher_Block_Chaining_.28CBC.29) with 3 key length cases for each of them:
 
-* ECB
-  * AesECB 128 bits key
-  * AesECB 192 bits key
-  * AesECB 256 bits key
+* _ECB_
+  * _AesECB 128 bits key_
+  * _AesECB 192 bits key_
+  * _AesECB 256 bits key_
   
-* CBC
-  * AesCBC 128 bits key
-  * AesCBC 192 bits key
-  * AesCBC 256 bits key
+* _CBC_
+  * _AesCBC 128 bits key_
+  * _AesCBC 192 bits key_
+  * _AesCBC 256 bits key_
   
 ## How to use it?
 
@@ -56,21 +56,21 @@ const std::string EncryptAesCBC256(const std::string& in, const std::string_view
 const std::string DecryptAesCBC256(const std::string& in, const std::string_view key, const std::string_view iv);
 ```
 **Tech notes:**
- * Padding is provided only for "in" params. "Iv" should equals 16 bytes. Key length(in bytes) is calculated using the formula: `KEY_LENGTH / 8`.
- * ECB mode is considered unsafe for most uses and is not implemented in streaming mode. See [wikipedia's article on ECB](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB)) for more details.
+ * Padding is provided only for _"in"_ params. _"Iv"_ should equals 16 bytes. Key length(in bytes) is calculated using the formula: _`KEY_LENGTH / 8`_.
+ * _ECB_ mode is considered unsafe for most uses and is not implemented in streaming mode. See [_wikipedia's article on ECB_](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Electronic_Codebook_(ECB)) for more details.
  * This library is designed for small code size and simplicity, intended for cases where small binary size, low memory footprint and portability is more important than high performance.
 
 **Notes:**
- * If you want to route result of encryption to `std::cout`, you should convert string to hexadecimal system, in other way you will get bad output!
+ * If you want to route result of encryption to _`std::cout`_, you should convert string to hexadecimal system, in other way you will get bad output!
   * **Convertion functions are included in each of examples.**
  * There is no built-in error checking or protection from out-of-bounds memory access errors as a result of malicious input.
 
 ## Want to build your own standard?
-If you're interested in building your standard on the base of this one, you can find everything you need to know in 'YOUR_STANDARD_GUIDE.txt'.
+If you're interested in building your standard on the base of this one, you can find everything you need to know in _'YOUR_STANDARD_GUIDE.txt'_.
 
 ## Screenshots? Here they are:
 
-Here's an example of encryption in CBC128 mode:
+Here's an example of encryption in _CBC128_ mode:
 
 ![plot](./Screenshots/Aes-crypt_cbc128_encryption.png)
 
