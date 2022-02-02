@@ -112,22 +112,22 @@ int main() {
             std::cout << "[\033[93mAes\033[0m/\033[94m" + mode + "\033[0m] \033[4mEncrypted message(hex):\033[0m";
 
             if (mode == "CBC-128") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptAesCBC128(msg, key, iv));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptAesCBC128(msg, key, iv));
 
             } else if (mode == "CBC-192") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptAesCBC192(msg, key, iv));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptAesCBC192(msg, key, iv));
 
             } else if (mode == "CBC-256") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptAesCBC256(msg, key, iv));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptAesCBC256(msg, key, iv));
 
             } else if (mode == "ECB-128") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptAesECB128(msg, key));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptAesECB128(msg, key));
 
             } else if (mode == "ECB-192") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptAesECB192(msg, key));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptAesECB192(msg, key));
 
             } else if (mode == "ECB-256") {
-                std::cout << std::endl << std::endl << Red::GetHexArray(Red::EncryptAesECB256(msg, key));
+                std::cout << std::endl << std::endl << *Red::GetHexArray(*Red::EncryptAesECB256(msg, key));
             }
 
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";
@@ -146,28 +146,28 @@ int main() {
             std::cout << std::endl << std::endl;
 
             if (mode == "CBC-128") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptAesCBC128(Red::GetStrArray(msg), key, iv);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptAesCBC128(*Red::GetStrArray(msg), key, iv);
 
             } else if (mode == "CBC-192") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptAesCBC192(Red::GetStrArray(msg), key, iv);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptAesCBC192(*Red::GetStrArray(msg), key, iv);
 
             } else if (mode == "CBC-256") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptAesCBC256(Red::GetStrArray(msg), key, iv);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptAesCBC256(*Red::GetStrArray(msg), key, iv);
 
             } else if (mode == "ECB-128") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptAesECB128(Red::GetStrArray(msg), key);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptAesECB128(*Red::GetStrArray(msg), key);
 
             } else if (mode == "ECB-192") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptAesECB192(Red::GetStrArray(msg), key);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptAesECB192(*Red::GetStrArray(msg), key);
 
             } else if (mode == "ECB-256") {
-                std::string a = Red::GetStrArray(msg.c_str());
-                std::cout << Red::DecryptAesECB256(Red::GetStrArray(msg), key);
+                std::string a = *Red::GetStrArray(msg.c_str());
+                std::cout << *Red::DecryptAesECB256(*Red::GetStrArray(msg), key);
             }
 
             std::cout << std::endl << std::endl << std::endl << "Press Enter to continue.";

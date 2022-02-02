@@ -164,9 +164,9 @@ inline static void AES_CBC_decrypt_buffer(struct AES_ctx_CBC_256 *ctx, uint8_t *
  *
  * @return Encrypted string
  */
-const std::string Red::EncryptAesCBC256(const std::string& in, const std::string_view key,
-                                                      const std::string_view iv) {
-    std::string Encrypted = "";
+std::string * Red::EncryptAesCBC256(const std::string& in, const std::string_view key,
+                                                           const std::string_view iv) {
+    std::string *Encrypted = new std::string;
 
     unsigned long long int InLen = in.length();
 
@@ -201,7 +201,7 @@ const std::string Red::EncryptAesCBC256(const std::string& in, const std::string
         AES_init_ctx_iv(&ctx, (const uint8_t *) key.data(), (const uint8_t *) iv.data());
         AES_CBC_encrypt_buffer(&ctx, (uint8_t *) Block.data(), Block.length());
 
-        Encrypted.append(Block);
+        Encrypted->append(Block);
     }
 
     return Encrypted;
@@ -216,9 +216,9 @@ const std::string Red::EncryptAesCBC256(const std::string& in, const std::string
  *
  * @return Decrypted string
  */
-const std::string Red::DecryptAesCBC256(const std::string &in, const std::string_view key,
-                                                      const std::string_view iv) {
-    std::string Decrypted = "";
+std::string * Red::DecryptAesCBC256(const std::string &in, const std::string_view key,
+                                                           const std::string_view iv) {
+    std::string *Decrypted = new std::string;
 
     unsigned long long int InLen = in.length();
 
@@ -248,7 +248,7 @@ const std::string Red::DecryptAesCBC256(const std::string &in, const std::string
         AES_init_ctx_iv(&ctx, (const uint8_t *) key.data(), (const uint8_t *) iv.data());
         AES_CBC_decrypt_buffer(&ctx, (uint8_t *) Block.data(), Block.length());
 
-        Decrypted.append(Block);
+        Decrypted->append(Block);
     }
 
     return Decrypted;

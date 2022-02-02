@@ -22,7 +22,7 @@ namespace Red {
      *
      * @return Encrypted string
      */
-    const std::string EncryptAesCBC256(
+    std::string * EncryptAesCBC256(
                               const std::string& in,
                               const std::string_view key,
                               const std::string_view iv
@@ -37,7 +37,7 @@ namespace Red {
      *
      * @return Decrypted string
      */
-    const std::string DecryptAesCBC256(
+    std::string * DecryptAesCBC256(
                               const std::string& in,
                               const std::string_view key,
                               const std::string_view iv
