@@ -140,7 +140,6 @@ int main() {
             inp.clear();
             getline(std::cin, msg);
             std::cout << std::endl << std::endl;
-            std::cout << msg.length() << ":" << msg << std::endl;
 
             std::cout << "[\033[93mAes\033[0m/\033[94m" + mode + "\033[0m] \033[4mDecrypted message(str):\033[0m";
             std::cout << std::endl << std::endl;
