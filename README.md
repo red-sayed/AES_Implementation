@@ -32,28 +32,28 @@ There are 7 header files(6 with algorithms and 1 with shared definitions) and 6 
 
 ```C
 // AesECB128.h
-const std::string EncryptAesECB128(const std::string& in, const std::string_view key);
-const std::string DecryptAesECB128(const std::string& in, const std::string_view key);
+std::string * EncryptAesECB128(const std::string& in, const std::string_view key);
+std::string * DecryptAesECB128(const std::string& in, const std::string_view key);
 
 // AesECB192.h
-const std::string EncryptAesECB192(const std::string& in, const std::string_view key);
-const std::string DecryptAesECB192(const std::string& in, const std::string_view key);
+std::string * EncryptAesECB192(const std::string& in, const std::string_view key);
+std::string * DecryptAesECB192(const std::string& in, const std::string_view key);
 
 // AesECB256.h
-const std::string EncryptAesECB256(const std::string& in, const std::string_view key);
-const std::string DecryptAesECB256(const std::string& in, const std::string_view key);
+std::string * EncryptAesECB256(const std::string& in, const std::string_view key);
+std::string * DecryptAesECB256(const std::string& in, const std::string_view key);
 
 // AesCBC128.h
-const std::string EncryptAesCBC128(const std::string& in, const std::string_view key, const std::string_view iv);
-const std::string DecryptAesCBC128(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * EncryptAesCBC128(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * DecryptAesCBC128(const std::string& in, const std::string_view key, const std::string_view iv);
 
 // AesCBC192.h
-const std::string EncryptAesCBC192(const std::string& in, const std::string_view key, const std::string_view iv);
-const std::string DecryptAesCBC192(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * EncryptAesCBC192(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * DecryptAesCBC192(const std::string& in, const std::string_view key, const std::string_view iv);
 
 // AesCBC256.h
-const std::string EncryptAesCBC256(const std::string& in, const std::string_view key, const std::string_view iv);
-const std::string DecryptAesCBC256(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * EncryptAesCBC256(const std::string& in, const std::string_view key, const std::string_view iv);
+std::string * DecryptAesCBC256(const std::string& in, const std::string_view key, const std::string_view iv);
 ```
 **Tech notes:**
  * Padding is provided only for _"in"_ params. _"Iv"_ should equals 16 bytes. Key length(in bytes) is calculated using the formula: _`KEY_LENGTH / 8`_.
